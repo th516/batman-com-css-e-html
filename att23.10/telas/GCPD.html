@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batman - Canal de Denúncias GCPD</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div id="header">
+    <h1>Dossiê Batman: Arquivos Confidenciais</h1>
+    <p>Wayne Enterprises - Arquivos Táticos de Gotham</p>
+  </div>
+
+  <div id="conteudo" class="container">
+    <div id="menu">
+      <h3>Navegação</h3>
+      <ul>
+        <li><a href="../index.html">Início (Origem)</a></li>
+        <li><a href="batfamilia.html">Batfamília</a></li>
+        <li><a href="viloes.html">Galeria de Vilões</a></li>
+        <li><a href="equipamentos.html">Arsenal & Batcaverna</a></li>
+        <li><a href="GCPD.html" class="active">Registros GCPD</a></li>
+      </ul>
+    </div>
+
+    <div id="main">
+      <h2>Canal de Denúncia Anônima (GCPD & Bat-Sinal)</h2>
+      <p>Envie informações sobre atividades suspeitas nos distritos de Gotham City diretamente para a central do Comissário Gordon.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados da Ocorrência</legend>
+
+          <p>
+            <label for="distrito">Distrito do Incidente:</label><br>
+            <select id="distrito" name="distrito">
+              <option value="bowery">The Bowery</option>
+              <option value="diamond">Diamond District</option>
+              <option value="otero">East End</option>
+              <option value="industrial">Distrito Industrial</option>
+              <option value="narrows">The Narrows</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="suspeito">Suspeito Principal / Facção:</label><br>
+            <input type="text" id="suspeito" name="suspeito" placeholder="Ex: Capangas do Pinguim">
+          </p>
+
+          <p>
+            <label for="descricao">Relatório dos Fatos:</label><br>
+            <textarea id="descricao" name="descricao" rows="5" cols="40"
+              placeholder="Descreva os acontecimentos..."></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="urgente" name="urgente">
+            <label for="urgente">Ativar Bat-Sinal (Risco Iminente)</label>
+          </p>
+
+          <p>
+            <button type="submit">Transmitir Registro</button>
+            <button type="reset">Limpar Dados</button>
+          </p>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+
+  <div id="footer">
+    <p>&copy; Projeto HTML e CSS - Batman: Origem</p>
+  </div>
+
+</body>
+
+</html>
